@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Auracle Sound</title>
+</head>
+
+<header>
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="logo-block">
+                <a href="#"> <img src="assets/images/logo.png"></a>
+            </div>
+            <nav class="nav-block">
+                <div class="search-block">
+                    <div class="input-box">
+                        <form id="searchForm" action="">
+                            <input id="search_box" name="fname" type="text" placeholder="Search..." />
+                            <span class="search">
+                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            </span>
+                            <i class="fa-solid fa-xmark close-icon"></i>
+                        </form>
+                    </div>
+                </div>
+                <div class="topnav" id="myTopnav">
+                    <ul>
+                        <li><a href="#">Player</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                    <div class="hamburger-block">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<body>
+    <!-- volume-block" -->
+    <section class="volume-block">
+        <div class="container ">
+            <div class="volume-wrapper">
+                <div class="play-icon">
+                    <div class="pause"><img id="pause" onclick=" togglePlay()" src="assets/images/play-buttton.png">
+                    </div>
+                    <!-- <div class="play"><img src="assets/images/pause.png"></div> -->
+                </div>
+                <div class="image-block">
+                    <div class="image">
+                        <img id="voluImage" src="assets/images/130_168.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>stopped</p>
+                        <h6 id="songName">Ambient Chill</h6>
+                    </div>
+                    <audio id="songs" src="" autoplay="true">
+                    </audio>
+                </div>
+                <div class="volume">
+                    <img id="rangImage" src="assets/images/speaker.png">
+                    <div class="volume-range">
+                        <input type="range" id="range" min="0" max="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- card-block -->
+    <section>
+        <div class="container">
+            <div class="cards-block" id="cards-block">
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="content-block">
+                <h5>2016-2024 Auracle Sound Ltd. Designed and developed by </h5>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
